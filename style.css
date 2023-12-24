@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.board div {
+    align-items: center;
+    background-color: #efefe6;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    height: 100px;
+    justify-content: center;
+    margin: 6px;
+    max-height: 20vw;
+    max-width: 20vw;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100px;
+}
+
+.board .clicked {
+    background-color: #5a594e;
+}
+
+@media screen and (min-width: 600px) {
+    .board {
+        max-width: 85vw;
+        width: 460px;
+    }
+}
+
+.board .green {
+    background-color: #a0c35a;
+}
+
+.board .yellow {
+    background-color: #f9df6d;
+}
+
+.board .blue {
+    background-color: #b0c3ee;
+}
+
+.board .purple {
+    background-color: #ba80c5;
+}
